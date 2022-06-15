@@ -1,0 +1,46 @@
+.card {
+    background-color: aliceblue;
+    width: 85%;
+    margin: 5% 0%;
+    padding: 5% 0%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    img {
+        width: 80%;
+        border: 10px solid white;
+    }
+
+    h2 {
+        margin: 2% 0%;
+    }
+
+    ul,
+    li {
+        list-style: none;
+        padding: 0;
+        margin: 2% 0%;
+    }
+
+    ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    p {
+        width: 85%;
+        margin: 5% auto;
+        font-size: clamp(18px, 1.1vw, 30px);
+    }
+
+    &__gitHubBtn {
+        background-color: hotpink;
+        color: white;
+        padding: 1% 3%;
+        width: 30%;
+        margin: 1% auto;
+
+    }
+}
