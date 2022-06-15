@@ -1,0 +1,56 @@
+nav {
+    margin: 1% 0%;
+    text-align: start;
+
+    a {
+        margin: 0 1%;
+    }
+
+    .menuBtn {
+        display: none;
+
+        @media only screen and (max-width:750px) {
+            display: block;
+            flex-direction: row;
+            margin: 1% 2%;
+        }
+    }
+
+    .menuLinks {
+        display: flex;
+
+
+        @media only screen and (max-width:750px) {
+            position: absolute;
+            top: 0;
+            flex-direction: column;
+            background-color: white;
+            box-shadow: 0px 0px 4px grey;
+            width: 100%;
+            padding: 5% 0%;
+            text-align: center;
+
+            a {
+                font-size: 1.2rem;
+                margin: 2% 0%;
+            }
+        }
+    }
+
+
+    .closeMenuBtb {
+
+        display: none;
+
+        @media only screen and (max-width:750px) {
+            display: block;
+            text-align: start;
+            margin: 0% 5%;
+            position: absolute;
+            top: 5%;
+        }
+
+
+
+    }
+}

@@ -34,18 +34,12 @@ p {
     font-size: clamp(20px, 1.3vw, 30px);
 }
 
-nav {
-    margin: 1% 0%;
-    text-align: start;
 
-    a {
-        margin: 0 1%;
-    }
-}
 
 footer {
     padding: 2% 0%;
 }
 
+@import './components/nav';
 @import './pages/mainPage';
 @import './components/card';
