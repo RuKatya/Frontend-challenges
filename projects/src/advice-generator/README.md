@@ -28,11 +28,11 @@ The designs created to the following widths:
 
 - Mobile: 375px
 
-![](./images/screen-mobile.JPG)
+![](../../public/images/advice-generator/screen-mobile.JPG)
 
 - Desktop: 1440px
 
-![](./images/screen-desk.JPG)
+![](../../public/images/advice-generator/screen-desk.JPG)
 
 <hr>
 
