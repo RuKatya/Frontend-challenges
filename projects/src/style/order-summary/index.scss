@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+//Colors
+$veryPaleBlue: hsl(225, 100%, 98%);
+$paleBlue: hsl(225, 100%, 94%);
+$desaturatedBlue: hsl(224, 23%, 55%);
+$darkBlue: hsl(223, 47%, 23%);
+$brightBlue: hsl(245, 75%, 52%);
+
+//Font
+$fontSize:16px;
+$family:'Red Hat Display',
+sans-serif;
+
+//Borders
+$borderRadius:1rem;
+
+.order-summary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    font-size: $fontSize;
+    font-family: $family;
+    background-color: $paleBlue;
+    color: $desaturatedBlue;
+    background-image: url('../../../public/images/order-summary/pattern-background-desktop.svg');
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 45%;
+    background-position: top;
+
+    @media only screen and (max-width:750px) {
+        background-image: url('../../../public/images/order-summary/pattern-background-mobile.svg');
+    }
+
+    img {
+        width: 100%;
+        border-top-left-radius: $borderRadius;
+        border-top-right-radius: $borderRadius;
+    }
+
+    &__card {
+        box-sizing: border-box;
+        background-color: white;
+        width: clamp(250px, 20vw, 450px);
+        border-radius: $borderRadius;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @media only screen and (max-width:750px) {
+            width: clamp(250px, 85vw, 450px);
+        }
+
+        &--info {
+            width: 80%;
+            margin: 0 auto;
+
+            h2 {
+                font-size: clamp($fontSize, 1.4vw, 25px);
+            }
+
+            p {
+                font-size: clamp($fontSize, 0.8vw, 25px);
+            }
+        }
+
+        &--plan {
+            box-sizing: border-box;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            justify-items: center;
+            align-items: center;
+            width: 85%;
+            background-color: hsla(225, 100%, 94%, 0.4);
+            margin: 10% auto;
+            border-radius: $borderRadius;
+            padding: 3% 2%;
+
+            img {
+                grid-row: 1/3;
+                width: 70%;
+            }
+
+            h4,
+            p {
+                margin: 0;
+                font-size: 16px;
+            }
+
+            h4 {
+                color: $darkBlue;
+            }
+
+            a {
+                grid-row: 1/3;
+                grid-column: 3/4;
+                text-decoration: underline;
+                font-weight: 700;
+                color: $brightBlue;
+                transition: all 0.3s;
+
+                &:hover {
+                    color: hsl(245, 84%, 63%);
+                }
+            }
+        }
+
+        button {
+            font-size: $fontSize;
+            width: 85%;
+            padding: 5% 0%;
+            margin: 4% 0%;
+            border-radius: $borderRadius;
+            color: white;
+            background-color: $brightBlue;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s;
+
+            &:hover {
+                background-color: hsla(256, 91%, 58%, 0.712);
+            }
+        }
+
+        &--cancelBtn {
+            margin: 2% 0% 10% 0%;
+            color: $desaturatedBlue;
+            font-weight: 700;
+            transition: all 0.3s;
+
+            &:hover {
+                color: $darkBlue;
+            }
+        }
+    }
+}

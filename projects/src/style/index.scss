@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+$headerColor: blueviolet;
+$linkColorAndText:white;
+$pinkBtn:hotpink;
+$hoverPinkBtn:rgb(131, 36, 134);
+$transition: 0.3s all;
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: clamp(26px, 2vw, 40px);
+}
+
+h2 {
+    font-size: clamp(22px, 1.5vw, 40px);
+}
+
+p {
+    font-size: clamp(20px, 1.3vw, 30px);
+}
+
+@import './pages/mainPage';
