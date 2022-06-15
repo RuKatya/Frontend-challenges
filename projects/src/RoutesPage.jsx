@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import App from "./App";
 import Layout from "./Layout";
 import OrderMain from "./order-summary/Page/OrderMain";
+import AdviceMain from "./advice-generator/Page/AdviceMain";
 
 const RoutesPage = () => {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
@@ -21,6 +22,7 @@ const RoutesPage = () => {
         <Route path="/" element={<Layout screenWidth={screenWidth} />}>
           <Route index element={<App screenWidth={screenWidth} />} />
           <Route path="order-summary" element={<OrderMain />} />
+          <Route path="advice-generator" element={<AdviceMain />} />
         </Route>
       </Routes>
     </BrowserRouter>
