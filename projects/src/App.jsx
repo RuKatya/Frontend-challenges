@@ -16,7 +16,8 @@ function App({ screenWidth }) {
       desc: "A solution to the Advice generator app challenge on Frontend Mentor.In this project, I practiced requesting data from the API and displaying it on the page.",
       used: ["React", "SCSS", "API"],
       link: "/advice-generator",
-      github: "3",
+      github:
+        "https://github.com/RuKatya/Frontend-challenges/tree/main/projects/src/advice-generator",
       img: "2",
     },
     // { name: "", desc: "", used: ["", ""], url: "", github: "" },
