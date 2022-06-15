@@ -17,7 +17,7 @@ const Layout = ({ screenWidth }) => {
 
         {(toggleMenu || screenWidth > 750) && (
           <div className="menuLinks">
-            <div onClick={toggleNav} class="closeMenuBtb">
+            <div onClick={toggleNav} className="closeMenuBtb">
               X
             </div>
             <Link to="/" onClick={toggleNav}>
