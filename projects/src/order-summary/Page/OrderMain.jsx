@@ -15,7 +15,7 @@ const OrderMain = () => {
         </div>
         <Plan />
         <button>Proceed to Payment</button>
-        <a href="/order-summary" className="order-summary__card--cancelBtn">
+        <a href="/" className="order-summary__card--cancelBtn">
           Cancel Order
         </a>
       </div>

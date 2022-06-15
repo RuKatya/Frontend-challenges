@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+//Media query
+$mobile:375px;
+$desktop: 1440px;
+
+// Colors
+$primaryLightCyan: hsl(193, 38%, 86%);
+$primaryNeonGreen: hsl(150, 100%, 66%);
+$naturalGrayishBlue: hsl(217, 19%, 38%);
+$naturalDarkGrayishBlue: hsl(217, 19%, 24%);
+$naturalDarkBlue: hsl(218, 23%, 16%);
+
+//Typography
+$fontSize:1.4rem;
+$Weights:800;
+$fontFamily:'Manrope',
+sans-seri;
+
+.advice-generator {
+    background-color: $naturalDarkBlue;
+    display: flex;
+    flex-direction: column;
+    height: 85vh;
+    align-items: center;
+    justify-content: center;
+
+    &--context {
+        background-color: $naturalDarkGrayishBlue;
+        width: clamp(250px, 25%, 600px);
+        height: 20vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 2% 0%;
+        color: $primaryLightCyan;
+        border-radius: 1.2rem;
+        font-family: $fontFamily;
+        position: relative;
+
+        @media only screen and (max-width:750px) {
+            width: clamp(250px, 90%, 600px);
+            height: 40vh;
+        }
+
+        img {
+            width: 90%;
+        }
+
+        h4 {
+            color: $primaryNeonGreen;
+            font-size: 0.6rem;
+            margin: 0% 0% 7% 0%;
+            letter-spacing: 0.3rem;
+        }
+
+        p {
+            font-size: $fontSize;
+            font-weight: $Weights;
+            font-family: $fontFamily;
+            width: 95%;
+            margin: 2% auto 7% auto;
+        }
+    }
+
+    button {
+        border: none;
+        background: none;
+        width: 50px;
+        height: 50px;
+        background-color: $primaryNeonGreen;
+        position: absolute;
+        bottom: -10%;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+        img {
+            width: 80%;
+        }
+
+        &:hover {
+            box-shadow:
+                0 0 5px hsla(150, 100%, 66%, 0.3),
+                0 0 10px hsla(150, 100%, 66%, 0.3),
+                0 0 20px hsla(150, 100%, 66%, 0.3),
+                0 0 30px hsla(150, 100%, 66%, 0.3),
+            ;
+            background-color: $primaryNeonGreen;
+            transition: all 0.5s;
+
+            &:not(:hover) {
+                transition: 0.5s;
+            }
+        }
+    }
+}
