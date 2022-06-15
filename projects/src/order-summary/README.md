@@ -32,17 +32,19 @@ The designs created to the following widths:
 
 - Mobile: 375px
 
-![](./images/screenshot-phone.JPG)
+<!-- ![](/images/order-summary/screenshot-phone.JPG) -->
+
+![](../../public/images/order-summary/screenshot-phone.JPG)
 
 - Desktop: 1440px
 
-![](./images/screenshot-desktop.JPG)
+![](../../public/images/order-summary/screenshot-desktop.JPG)
 
 <hr>
 
 ### Links
 
-- [Live Site URL](https://frontend-chakkenges-projects.vercel.app/order-summary/index.html)
+- [Live Site URL](https://frontend-challenges-projects.vercel.app/order-summary/index.html)
 
 ## Process
 
