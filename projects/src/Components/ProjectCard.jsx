@@ -13,8 +13,8 @@ const ProjectCard = ({ project, screenWidth }) => {
         <img
           src={
             screenWidth < 750
-              ? `/images/main/${project.img}__mobile.jpg`
-              : `/images/main/${project.img}__desk.jpg`
+              ? `/images/main/${project.img}/${project.img}__mobile.jpg`
+              : `/images/main/${project.img}/${project.img}__desk.jpg`
           }
           alt="project.name"
         />

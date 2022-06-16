@@ -9,7 +9,7 @@ function App({ screenWidth }) {
       link: "/order-summary",
       github:
         "https://github.com/RuKatya/Frontend-challenges/tree/main/projects/src/order-summary",
-      img: "1",
+      img: "order",
       challenge:
         "https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj",
     },
@@ -20,7 +20,7 @@ function App({ screenWidth }) {
       link: "/advice-generator",
       github:
         "https://github.com/RuKatya/Frontend-challenges/tree/main/projects/src/advice-generator",
-      img: "2",
+      img: "advice",
       challenge:
         "https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db",
     },
@@ -31,7 +31,7 @@ function App({ screenWidth }) {
       link: "/expenses-chart",
       github:
         "https://github.com/RuKatya/Frontend-challenges/tree/main/projects/src/expenses-chart",
-      img: "3",
+      img: "expenses",
       challenge:
         "https://www.frontendmentor.io/challenges/expenses-chart-component-e7yJBUdjwt",
     },
