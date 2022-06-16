@@ -28,6 +28,9 @@ const ProjectCard = ({ project, screenWidth }) => {
       >
         Github
       </a>
+      <a href={project.challenge} target="_blank" rel="noreferrer">
+        The challenge
+      </a>
     </div>
   );
 };

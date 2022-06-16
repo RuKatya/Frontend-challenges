@@ -4,23 +4,37 @@ function App({ screenWidth }) {
   const projcts = [
     {
       name: "Order Summary",
-      desc: "A solution to the Order summary card challenge. This project is my first experiment with a similar task. I tried to create a component as close as possible to the design",
+      desc: "The challenge is to build out this order summary card component. This project is my first experiment with a similar task. I tried to create a component as close as possible to the design.",
       used: ["React", "SCSS"],
       link: "/order-summary",
       github:
         "https://github.com/RuKatya/Frontend-challenges/tree/main/projects/src/order-summary",
       img: "1",
+      challenge:
+        "https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj",
     },
     {
       name: "Advice Generator App",
-      desc: "A solution to the Advice generator app challenge on Frontend Mentor.In this project, I practiced requesting data from the API and displaying it on the page.",
+      desc: "The challenge is to build out this advice generator app using the Advice Slip API .In this project, I practiced requesting data from the API and displaying it on the page.",
       used: ["React", "SCSS", "API"],
       link: "/advice-generator",
       github:
         "https://github.com/RuKatya/Frontend-challenges/tree/main/projects/src/advice-generator",
       img: "2",
+      challenge:
+        "https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db",
     },
-    // { name: "", desc: "", used: ["", ""], url: "", github: "" },
+    {
+      name: "Expenses chart component",
+      desc: "The challenge is to build out this bar chart component. In the project I used a data.json file which include amount and day data.",
+      used: ["React", "SCSS", "JSON"],
+      link: "/expenses-chart",
+      github:
+        "https://github.com/RuKatya/Frontend-challenges/tree/main/projects/src/expenses-chart",
+      img: "3",
+      challenge:
+        "https://www.frontendmentor.io/challenges/expenses-chart-component-e7yJBUdjwt",
+    },
     // { name: "", desc: "", used: ["", ""], url: "", github: "" },
     // { name: "", desc: "", used: ["", ""], url: "", github: "" },
   ];

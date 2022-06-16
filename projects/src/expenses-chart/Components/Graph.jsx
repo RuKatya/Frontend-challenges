@@ -60,7 +60,9 @@ const Graph = ({ data }) => {
           backgroundColor: day === data.day ? activeDay : regularDay,
         }}
       ></div>
-      <div>{data.day}</div>
+      <div className="expenses-chart__context--eachGraph__dayText">
+        {data.day}
+      </div>
     </div>
   );
 };

@@ -1,21 +1,27 @@
-import data from "../data.json";
+// import data from "../data.json";
 import Graph from "./Graph";
 
-const Context = () => {
+const Context = ({ data, totalSpend }) => {
   return (
     <div className="expenses-chart__context">
-      <h3>Spending - Last 7 Days</h3>
+      <h2 className="expenses-chart__context--header">
+        Spending - Last 7 Days
+      </h2>
       <div className="expenses-chart__context--graphs">
         {data.map((d, index) => {
           return <Graph data={d} key={index} />;
         })}
       </div>
-      {/* <div>
-        <p>Total this month</p>
-        <h3>456</h3>
-        <h4>+2.4%</h4>
-        <p>from last month</p>
-      </div> */}
+      <div className="expenses-chart__context--total">
+        <p className="expenses-chart__context--total__text totalMonth">
+          Total this month
+        </p>
+        <h2 className="amountTotal">${totalSpend}</h2>
+        <h4 className="percentTotal">+2.4%</h4>
+        <p className="expenses-chart__context--total__text lastMonth">
+          from last month
+        </p>
+      </div>
     </div>
   );
 };
