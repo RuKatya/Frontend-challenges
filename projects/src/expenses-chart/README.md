@@ -51,9 +51,14 @@ The designs created to the following widths:
 ### Built with
 
 - [React](https://reactjs.org/)
+  - UseState
+  - UseEffect
 - [SCSS](https://sass-lang.com/)
-- Flexbox
-- CSS Grid
+  - Flexbox
+  - CSS Grid
+  - Varibals
+- JavaScript
+  - Reduce
 
 ## Author
 

@@ -44,14 +44,13 @@ The designs created to the following widths:
 
 ### Built with
 
-- Semantic HTML5 markup
-- SCSS
+- [React](https://reactjs.org/)
+- [SCSS](https://sass-lang.com/)
   - Flexbox
   - Grid
   - Varibals
-- Mobile-first workflow
 - JavaScript
-  - Fetch
+  - Axios
 
 ## Author
 
