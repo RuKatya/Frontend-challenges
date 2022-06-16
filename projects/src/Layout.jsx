@@ -29,6 +29,9 @@ const Layout = ({ screenWidth }) => {
             <Link to="/advice-generator" onClick={toggleNav}>
               Advice Generator App
             </Link>
+            <Link to="/expenses-chart" onClick={toggleNav}>
+              Expenses Chart
+            </Link>
           </div>
         )}
       </nav>
