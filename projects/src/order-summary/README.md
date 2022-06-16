@@ -44,7 +44,7 @@ The designs created to the following widths:
 
 ### Links
 
-- [Live Site URL](https://frontend-challenges-projects.vercel.app/order-summary/index.html)
+- [Live Site URL](https://frontend-challanges.herokuapp.com/order-summary)
 
 ## Process
 

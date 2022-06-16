@@ -38,7 +38,7 @@ The designs created to the following widths:
 
 ### Links
 
-- [Live Site URL](https://frontend-chakkenges-projects.vercel.app/advice-generator-app/index.html)
+- [Live Site URL](https://frontend-challanges.herokuapp.com/advice-generator)
 
 ## Process
 
@@ -55,6 +55,6 @@ The designs created to the following widths:
 
 ## Author
 
-- Website - [Katya Rukosuev](https://www.katya-ru-fullstack.com//)
+- Website - [Katya Rukosuev](https://www.katya-ru-fullstack.com/)
 - Frontend Mentor - [@RuKatya](https://www.frontendmentor.io/profile/RuKatya)
 - Linkedin - [Katya Rukosuev](https://www.linkedin.com/in/katya-rukosuev/)
