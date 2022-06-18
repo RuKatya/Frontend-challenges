@@ -35,7 +35,17 @@ function App({ screenWidth }) {
       challenge:
         "https://www.frontendmentor.io/challenges/expenses-chart-component-e7yJBUdjwt",
     },
-    // { name: "", desc: "", used: ["", ""], url: "", github: "" },
+    {
+      name: "Interactive rating component",
+      desc: "The challenge is to build out this interactive rating component. In this project I used Conditional Rendering.",
+      used: ["React", "SCSS"],
+      link: "/intective-rating",
+      github:
+        "https://github.com/RuKatya/Frontend-challenges/tree/main/projects/src/intective-rating",
+      img: "intective",
+      challenge:
+        "https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI",
+    },
     // { name: "", desc: "", used: ["", ""], url: "", github: "" },
   ];
 
