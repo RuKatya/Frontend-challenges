@@ -32,11 +32,11 @@ The designs created to the following widths:
 
 - Mobile: 375px
 
-![](../../public/images/intective-rating/screenshot__phone.jpg)
+![](../../../public/images/intective-rating/screenshot__phone.jpg)
 
 - Desktop: 1440px
 
-![](../../public/images/intective-rating/screenshot-desktop.jpg)
+![](../../../public/images/intective-rating/screenshot__desktop.jpg)
 
 <hr>
 
