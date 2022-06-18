@@ -2,10 +2,10 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useState, useEffect } from "react";
 import App from "./App";
 import Layout from "./Layout";
-import OrderMain from "./order-summary/Page/OrderMain";
-import AdviceMain from "./advice-generator/Page/AdviceMain";
-import ExpensesIndex from "./expenses-chart/ExpensesIndex";
-import IntectivcePage from "./intective-rating/Page/IntectivcePage";
+import OrderMain from "./Projects/order-summary/Page/OrderMain";
+import AdviceMain from "./Projects/advice-generator/Page/AdviceMain";
+import ExpensesIndex from "./Projects/expenses-chart/Page/ExpensesIndex";
+import IntectivcePage from "./Projects/intective-rating/Page/IntectivcePage";
 
 const RoutesPage = () => {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);

@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
-import "../../style/advice-generator/index.scss";
+import "../../../style/advice-generator/index.scss";
 import Button from "../Components/Button";
 import Context from "../Components/Context";
 import Image from "../Components/Image";

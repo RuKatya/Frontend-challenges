@@ -1,4 +1,4 @@
-import "../../style/order-summary/index.scss";
+import "../../../style/order-summary/index.scss";
 import Plan from "../Components/Plan";
 
 const OrderMain = () => {

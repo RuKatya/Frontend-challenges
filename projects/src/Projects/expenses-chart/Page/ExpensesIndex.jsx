@@ -1,8 +1,8 @@
 import { useState } from "react";
-import "../style/expenses-chart/index.scss";
-import Context from "./Components/Context";
-import Header from "./Components/Header";
-import data from "./data.json";
+import "../../../style/expenses-chart/index.scss";
+import Context from "../Components/Context";
+import Header from "../Components/Header";
+import data from "../data.json";
 
 const ExpensesIndex = () => {
   const [balance, setBalance] = useState(921.48);

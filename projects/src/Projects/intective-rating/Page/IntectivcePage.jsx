@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "../../style/intective-rating/index.scss";
+import "../../../style/intective-rating/index.scss";
 import ContextRating from "../Components/Rating/ContextRating";
 import ImageStar from "../Components/Rating/ImageStar";
 import Rating from "../Components/Rating/Rating";
