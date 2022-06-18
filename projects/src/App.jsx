@@ -8,7 +8,7 @@ function App({ screenWidth }) {
       used: ["React", "SCSS"],
       link: "/order-summary",
       github:
-        "https://github.com/RuKatya/Frontend-challenges/tree/main/projects/src/order-summary",
+        "https://github.com/RuKatya/Frontend-challenges/tree/main/projects/src/Projects/order-summary",
       img: "order",
       challenge:
         "https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj",
@@ -19,7 +19,7 @@ function App({ screenWidth }) {
       used: ["React", "SCSS", "API"],
       link: "/advice-generator",
       github:
-        "https://github.com/RuKatya/Frontend-challenges/tree/main/projects/src/advice-generator",
+        "https://github.com/RuKatya/Frontend-challenges/tree/main/projects/src/Projects/advice-generator",
       img: "advice",
       challenge:
         "https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db",
@@ -30,7 +30,7 @@ function App({ screenWidth }) {
       used: ["React", "SCSS", "JSON"],
       link: "/expenses-chart",
       github:
-        "https://github.com/RuKatya/Frontend-challenges/tree/main/projects/src/expenses-chart",
+        "https://github.com/RuKatya/Frontend-challenges/tree/main/projects/src/Projects/expenses-chart",
       img: "expenses",
       challenge:
         "https://www.frontendmentor.io/challenges/expenses-chart-component-e7yJBUdjwt",
@@ -41,7 +41,7 @@ function App({ screenWidth }) {
       used: ["React", "SCSS"],
       link: "/intective-rating",
       github:
-        "https://github.com/RuKatya/Frontend-challenges/tree/main/projects/src/intective-rating",
+        "https://github.com/RuKatya/Frontend-challenges/tree/main/projects/src/Projects/intective-rating",
       img: "intective",
       challenge:
         "https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI",
