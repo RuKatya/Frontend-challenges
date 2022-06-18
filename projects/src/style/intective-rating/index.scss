@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+$fontFamily:'Overpass',
+sans-serif;
+
+//Primary
+$Orange: hsl(25, 97%, 53%);
+
+//Neutral
+$White: hsl(0, 0%, 100%);
+$LightGrey: hsl(217, 12%, 63%);
+$MediumGrey: hsla(216, 12%, 54%, 0.2);
+$DarkBlue: hsl(213, 19%, 18%);
+$VeryDarkBlue: hsl(216, 12%, 8%);
+
+.intective-rating {
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $VeryDarkBlue;
+    font-size: $fontFamily;
+
+    &__component {
+        display: flex;
+        flex-direction: column;
+        border-radius: 2rem;
+        background-color: $DarkBlue;
+        width: clamp(250px, 20%, 500px);
+        padding: 1.5% 2%;
+
+        @media only screen and (max-width:750px) {
+            padding: 5% 5%;
+            width: clamp(250px, 80%, 500px);
+        }
+
+        &--star {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: $MediumGrey;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &--contextRating {
+            text-align: start;
+
+            h2 {
+                color: $White;
+                margin: 10% 0% 3% 0%;
+            }
+
+            p {
+                margin: 2% 0%;
+                color: $LightGrey;
+                font-size: clamp(14px, 0.8vw, 25px);
+                line-height: 3vh;
+            }
+        }
+
+        &--rating {
+            margin: 5% 0%;
+            display: grid;
+            justify-items: center;
+            grid-template-columns: repeat(5, 1fr);
+
+            input,
+            button[type=submit] {
+                cursor: pointer;
+            }
+
+            input {
+                // color: $White;
+                color: $LightGrey;
+                font-weight: 700;
+                border: none;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                background-color: $MediumGrey;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                &:hover {
+                    background-color: $Orange;
+                    color: $White;
+                }
+            }
+
+            button[type=submit] {
+                grid-row: 2/3;
+                grid-column: 1/6;
+                width: 95%;
+                padding: 3.5% 0%;
+                border-radius: 1.5rem;
+                border: none;
+                margin: 7% 0% 0% 0%;
+                background-color: $Orange;
+                font-weight: 700;
+                color: $White;
+
+                &:hover {
+                    background-color: hsl(24, 61%, 82%);
+                    color: $Orange;
+                }
+            }
+        }
+
+        &--selected {
+            background-color: $MediumGrey;
+            width: 50%;
+            color: $Orange;
+            padding: 3%;
+            border-radius: 5rem;
+            margin: 5% auto;
+        }
+
+        &--contextSelected {
+            text-align: center;
+        }
+    }
+}
+
+input.active {
+    background-color: $LightGrey;
+    color: $White;
+}
