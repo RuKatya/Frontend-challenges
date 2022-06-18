@@ -16,15 +16,15 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
 
 ## Overview
 
-This project is my first experiment with a similar task. I tried to create a component as close as possible to the design.
-To create the component, I decided to use HTML tags, and SCSS.
-
 ### The challenge
 
 The challenge is to build out the order summary card component and get it looking as close to the design as possible.
 Your users should be able to:
 
-- See hover states for interactive elements
+- View the optimal layout for the app depending on their device's screen size
+- See hover states for all interactive elements on the page
+- Select and submit a number rating
+- See the "Thank you" card state after submitting a rating
 
 ### Screenshot
 
@@ -32,19 +32,17 @@ The designs created to the following widths:
 
 - Mobile: 375px
 
-<!-- ![](/images/order-summary/screenshot-phone.JPG) -->
-
-![](../../public/images/order-summary/screenshot-phone.JPG)
+![](../../public/images/intective-rating/screenshot__phone.JPG)
 
 - Desktop: 1440px
 
-![](../../public/images/order-summary/screenshot-desktop.JPG)
+![](../../public/images/intective-rating/screenshot-desktop.JPG)
 
 <hr>
 
 ### Links
 
-- [Live Site URL](https://frontend-challanges.herokuapp.com/order-summary)
+- [Live Site URL](https://frontend-challanges.herokuapp.com/intective-rating)
 
 ## Process
 

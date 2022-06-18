@@ -16,9 +16,6 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
 
 ## Overview
 
-This project is my first experiment with a similar task. I tried to create a component as close as possible to the design.
-To create the component, I decided to use HTML tags, and SCSS.
-
 ### The challenge
 
 The challenge is to build out the order summary card component and get it looking as close to the design as possible.
@@ -31,8 +28,6 @@ Your users should be able to:
 The designs created to the following widths:
 
 - Mobile: 375px
-
-<!-- ![](/images/order-summary/screenshot-phone.JPG) -->
 
 ![](../../public/images/order-summary/screenshot-phone.JPG)
 
