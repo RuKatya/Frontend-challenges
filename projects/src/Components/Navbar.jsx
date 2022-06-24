@@ -34,6 +34,9 @@ const Navbar = ({ screenWidth }) => {
           <Link to="/intective-rating" onClick={toggleNav}>
             Interactive Rating Component
           </Link>
+          <Link to="/rock-paper-scissors" onClick={toggleNav}>
+            Rock Paper Scissors
+          </Link>
         </div>
       )}
     </nav>
