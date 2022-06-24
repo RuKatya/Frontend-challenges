@@ -16,7 +16,7 @@ const ProjectCard = ({ project, screenWidth }) => {
               ? `/images/main/${project.img}/${project.img}__mobile.jpg`
               : `/images/main/${project.img}/${project.img}__desk.jpg`
           }
-          alt="project.name"
+          alt={project.name}
         />
       </Link>
       <p>{project.desc}</p>
