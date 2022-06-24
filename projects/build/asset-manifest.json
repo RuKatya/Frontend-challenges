@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d571c149.css",
+    "main.js": "/static/js/main.64e744eb.js",
+    "index.html": "/index.html",
+    "static/media/pattern-background-mobile.svg": "/static/media/pattern-background-mobile.c8d50fcb68aa27a01e4d.svg",
+    "static/media/pattern-background-desktop.svg": "/static/media/pattern-background-desktop.5a0ab6898fc956557d00.svg",
+    "main.d571c149.css.map": "/static/css/main.d571c149.css.map",
+    "main.64e744eb.js.map": "/static/js/main.64e744eb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d571c149.css",
+    "static/js/main.64e744eb.js"
+  ]
+}
