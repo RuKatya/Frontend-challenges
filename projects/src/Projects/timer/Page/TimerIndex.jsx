@@ -7,6 +7,7 @@ const TimerIndex = () => {
   const currentTime = new Date();
   const newDate = new Date().setDate(currentTime.getDate() + 14);
   const futureDate = new Date(newDate);
+  //   const futureDate = new Date("2022-07-03");
 
   const [timerLeft, setTimerLeft] = useState(futureDate - currentTime);
 
