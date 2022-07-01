@@ -14,7 +14,6 @@ const CountdownTtimer = ({ day = 0, hours = 0, minutes = 0, seconds = 0 }) => {
     } else if (m === 0 && s === 0) {
       setTime([d, h - 1, 59, 59]);
     } else if (s === 0) {
-      setHui([d, h, m - 1, 59]);
       setTime([d, h, m - 1, 59]);
     } else {
       setTime([d, h, m, s - 1]);
