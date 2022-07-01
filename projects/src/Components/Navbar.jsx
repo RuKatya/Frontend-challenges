@@ -2,6 +2,15 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 
 const Navbar = ({ screenWidth }) => {
+  const paths = [
+    { link: "order-summary", title: "Order Summary" },
+    { link: "advice-generator", title: "Advice Generator App" },
+    { link: "expenses-chart", title: "Expenses Chart" },
+    { link: "intective-rating", title: "Interactive Rating Component" },
+    { link: "rock-paper-scissors", title: "Rock Paper Scissors" },
+    { link: "timer", title: "Count Down Timer" },
+  ];
+
   const [toggleMenu, setToggleMenu] = useState(false);
 
   const toggleNav = () => {
@@ -22,21 +31,15 @@ const Navbar = ({ screenWidth }) => {
           <Link to="/" onClick={toggleNav}>
             Home
           </Link>
-          <Link to="/order-summary" onClick={toggleNav}>
-            Order Summary
-          </Link>
-          <Link to="/advice-generator" onClick={toggleNav}>
-            Advice Generator App
-          </Link>
-          <Link to="/expenses-chart" onClick={toggleNav}>
-            Expenses Chart
-          </Link>
-          <Link to="/intective-rating" onClick={toggleNav}>
-            Interactive Rating Component
-          </Link>
-          <Link to="/rock-paper-scissors" onClick={toggleNav}>
-            Rock Paper Scissors
-          </Link>
+          {paths.map((path, index) => {
+            return (
+              <>
+                <Link to={`/${path.link}`} onClick={toggleNav} key={index}>
+                  {path.title}
+                </Link>
+              </>
+            );
+          })}
         </div>
       )}
     </nav>

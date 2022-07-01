@@ -7,6 +7,7 @@ import AdviceMain from "./Projects/advice-generator/Page/AdviceMain";
 import ExpensesIndex from "./Projects/expenses-chart/Page/ExpensesIndex";
 import IntectivcePage from "./Projects/intective-rating/Page/IntectivcePage";
 import RPSIndex from "./Projects/rock-paper-scissors/Page/RPSIndex";
+import TimerIndex from "./Projects/timer/Page/TimerIndex";
 
 const RoutesPage = () => {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
@@ -29,6 +30,7 @@ const RoutesPage = () => {
           <Route path="expenses-chart" element={<ExpensesIndex />} />
           <Route path="intective-rating" element={<IntectivcePage />} />
           <Route path="rock-paper-scissors" element={<RPSIndex />} />
+          <Route path="timer" element={<TimerIndex />} />
         </Route>
       </Routes>
     </BrowserRouter>
