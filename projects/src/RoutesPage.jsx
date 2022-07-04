@@ -30,7 +30,7 @@ const RoutesPage = () => {
           <Route path="expenses-chart" element={<ExpensesIndex />} />
           <Route path="intective-rating" element={<IntectivcePage />} />
           <Route path="rock-paper-scissors" element={<RPSIndex />} />
-          <Route path="timer" element={<TimerIndex />} />
+          {/* <Route path="timer" element={<TimerIndex />} /> */}
         </Route>
       </Routes>
     </BrowserRouter>

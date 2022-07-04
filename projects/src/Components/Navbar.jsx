@@ -8,7 +8,7 @@ const Navbar = ({ screenWidth }) => {
     { link: "expenses-chart", title: "Expenses Chart" },
     { link: "intective-rating", title: "Interactive Rating Component" },
     { link: "rock-paper-scissors", title: "Rock Paper Scissors" },
-    { link: "timer", title: "Count Down Timer" },
+    // { link: "timer", title: "Count Down Timer" },
   ];
 
   const [toggleMenu, setToggleMenu] = useState(false);
