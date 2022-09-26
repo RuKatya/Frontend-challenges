@@ -19,11 +19,7 @@ sans-seri;
 
 .advice-generator {
     background-color: $naturalDarkBlue;
-    display: flex;
     flex-direction: column;
-    height: 85vh;
-    align-items: center;
-    justify-content: center;
 
     &--context {
         background-color: $naturalDarkGrayishBlue;

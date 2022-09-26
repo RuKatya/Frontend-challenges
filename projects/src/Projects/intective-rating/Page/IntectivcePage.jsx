@@ -12,7 +12,7 @@ const IntectivcePage = () => {
   const [chooseNumber, setChooseNumber] = useState(null);
 
   return (
-    <div className="intective-rating">
+    <div className="intective-rating main-page-of-project ">
       <div className="intective-rating__component">
         {submit ? (
           <>

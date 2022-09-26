@@ -20,10 +20,6 @@ $borderRaduis:1rem;
 .expenses-chart {
     font-family: $fontFamily;
     background-color: $Cream;
-    height: 85vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
     &__card {
         width: clamp(250px, 22%, 500px);

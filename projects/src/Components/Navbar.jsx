@@ -3,11 +3,12 @@ import { useState } from "react";
 
 const Navbar = ({ screenWidth }) => {
   const paths = [
-    { link: "order-summary", title: "Order Summary" },
+    { link: "rock-paper-scissors", title: "Rock Paper Scissors" },
     { link: "advice-generator", title: "Advice Generator App" },
     { link: "expenses-chart", title: "Expenses Chart" },
     { link: "intective-rating", title: "Interactive Rating Component" },
-    { link: "rock-paper-scissors", title: "Rock Paper Scissors" },
+    { link: "order-summary", title: "Order Summary" },
+    { link: "to-do-app", title: "Todo App" },
     // { link: "timer", title: "Count Down Timer" },
   ];
 

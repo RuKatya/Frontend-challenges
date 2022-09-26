@@ -38,6 +38,13 @@ footer {
     padding: 1.5% 0%;
 }
 
+.main-page-of-project {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+}
+
 @import './components/nav';
 @import './pages/mainPage';
 @import './components/card';

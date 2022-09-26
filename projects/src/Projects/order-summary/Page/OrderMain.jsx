@@ -3,7 +3,7 @@ import Plan from "../Components/Plan";
 
 const OrderMain = () => {
   return (
-    <div className="order-summary">
+    <div className="order-summary main-page-of-project">
       <div className="order-summary__card">
         <img src="/images/order-summary/illustration-hero.svg" alt="" />
         <div className="order-summary__card--info">

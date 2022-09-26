@@ -32,7 +32,7 @@ const AdviceMain = ({ screenWidth }) => {
   }
 
   return (
-    <div className="advice-generator">
+    <div className="advice-generator main-page-of-project">
       <div className="advice-generator--context">
         {adviceClient ? (
           <>

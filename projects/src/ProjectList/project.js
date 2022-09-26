@@ -1,14 +1,15 @@
 exports.projcts = [
     {
-        name: "Order Summary",
-        desc: "The challenge is to build out this order summary card component. This project is my first experiment with a similar task. I tried to create a component as close as possible to the design.",
+        name: "Rock, Paper, Scissors game",
+        desc: "The challenge is to build out this Rock, Paper, Scissors game.",
         used: ["React", "SCSS"],
-        link: "/order-summary",
+        link: "/rock-paper-scissors",
+        url: "https://frontend-challanges.herokuapp.com/rock-paper-scissors",
         github:
-            "https://github.com/RuKatya/Frontend-challenges/tree/main/projects/src/Projects/order-summary",
-        img: "order",
+            "https://github.com/RuKatya/Frontend-challenges/tree/main/projects/src/Projects/rock-paper-scissors",
+        img: "rock-paper-scissors",
         challenge:
-            "https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj",
+            "https://www.frontendmentor.io/challenges/rock-paper-scissors-game-pTgwgvgH",
     },
     {
         name: "Advice Generator App",
@@ -44,15 +45,14 @@ exports.projcts = [
             "https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI",
     },
     {
-        name: "Rock, Paper, Scissors game",
-        desc: "The challenge is to build out this Rock, Paper, Scissors game.",
+        name: "Order Summary",
+        desc: "The challenge is to build out this order summary card component. This project is my first experiment with a similar task. I tried to create a component as close as possible to the design.",
         used: ["React", "SCSS"],
-        link: "/rock-paper-scissors",
-        url: "https://frontend-challanges.herokuapp.com/rock-paper-scissors",
+        link: "/order-summary",
         github:
-            "https://github.com/RuKatya/Frontend-challenges/tree/main/projects/src/Projects/rock-paper-scissors",
-        img: "rock-paper-scissors",
+            "https://github.com/RuKatya/Frontend-challenges/tree/main/projects/src/Projects/order-summary",
+        img: "order",
         challenge:
-            "https://www.frontendmentor.io/challenges/rock-paper-scissors-game-pTgwgvgH",
+            "https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj",
     },
 ];

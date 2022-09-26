@@ -18,7 +18,7 @@ const ExpensesIndex = () => {
   const totalSpend = 200 + allAmount;
 
   return (
-    <div className="expenses-chart">
+    <div className="expenses-chart main-page-of-project">
       <div className="expenses-chart__card">
         <Header balance={balance} />
         <Context balance={balance} data={data} totalSpend={totalSpend} />
