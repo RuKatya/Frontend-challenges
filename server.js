@@ -11,6 +11,9 @@ app.use(express.json())
 
 connectToData()
 
+const todoRouter = require('./routes/todoApp/todoRoute')
+app.use('/todo', todoRouter)
+
 app.get('*', (req, res) => {
     res.sendFile(path.resolve(__dirname, './projects/build', 'index.html'));
 });

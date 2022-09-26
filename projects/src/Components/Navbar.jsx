@@ -34,11 +34,9 @@ const Navbar = ({ screenWidth }) => {
           </Link>
           {paths.map((path, index) => {
             return (
-              <>
-                <Link to={`/${path.link}`} onClick={toggleNav} key={index}>
-                  {path.title}
-                </Link>
-              </>
+              <Link to={`/${path.link}`} onClick={toggleNav} key={index}>
+                {path.title}
+              </Link>
             );
           })}
         </div>

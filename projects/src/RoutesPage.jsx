@@ -7,7 +7,7 @@ import AdviceMain from "./Projects/advice-generator/Page/AdviceMain";
 import ExpensesIndex from "./Projects/expenses-chart/Page/ExpensesIndex";
 import IntectivcePage from "./Projects/intective-rating/Page/IntectivcePage";
 import RPSIndex from "./Projects/rock-paper-scissors/Page/RPSIndex";
-import ToDoApp from "./Projects/to-do-app/ToDoApp";
+import ToDoApp from "./Projects/to-do-app/Page/ToDoApp";
 // import TimerIndex from "./Projects/timer/Page/TimerIndex";
 
 const RoutesPage = () => {
