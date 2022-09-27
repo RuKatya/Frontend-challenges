@@ -1,0 +1,13 @@
+.dark {
+    &__main {
+        background-image: url(../../../public/images/todoApp/images/bg-desktop-dark.jpg);
+        background-color: $VeryDarkBlue;
+    }
+
+    &__formAddTask {
+        background: $VeryDarkDesaturatedBlue;
+
+    }
+
+    // &__inputAddTask {}
+}

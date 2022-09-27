@@ -12,17 +12,17 @@ $CheckBackground: linear-gradient hsl(192, 100%, 67%) to hsl(280, 87%, 65%);
 $VeryLightGray: hsl(0, 0%, 98%);
 $VeryLightGrayishBlue: hsl(236, 33%, 92%);
 $LightGrayishBlue: hsl(233, 11%, 84%);
-$DarkGrayishBlue: hsl(236, 9%, 61%);
-$VeryDarkGrayishBlue: hsl(235, 19%, 35%);
+$DarkGrayishBlueLight: hsl(236, 9%, 61%);
+$VeryDarkGrayishBlueLight: hsl(235, 19%, 35%);
 
 //Dark Theme
 $VeryDarkBlue: hsl(235, 21%, 11%);
 $VeryDarkDesaturatedBlue: hsl(235, 24%, 19%);
 $LightGrayishBlue: hsl(234, 39%, 85%);
 $LightGrayishBlue-hover: hsl(236, 33%, 92%);
-$DarkGrayishBlue: hsl(234, 11%, 52%);
-$VeryDarkGrayishBlue: hsl(233, 14%, 35%);
-$VeryDarkGrayishBlue: hsl(237, 14%, 26%);
+$DarkGrayishBlueDark: hsl(234, 11%, 52%);
+$VeryDarkGrayishBlueDark: hsl(233, 14%, 35%);
+$VeryDarkGrayishBlueDarkMore: hsl(237, 14%, 26%);
 
 .to-do-app {
     font-family: $fontFamily;
@@ -33,8 +33,8 @@ $VeryDarkGrayishBlue: hsl(237, 14%, 26%);
 }
 
 .to-do-list {
-    background-color: $VeryDarkDesaturatedBlue;
     width: clamp(300px, 30%, 1200px);
+    height: 50vh;
 
     &__header {
         display: flex;
@@ -42,18 +42,21 @@ $VeryDarkGrayishBlue: hsl(237, 14%, 26%);
         align-items: center;
         color: $VeryLightGray;
     }
-}
 
-.dark {
-    &__main {
-        background-image: url(../../../public/images/todoApp/images/bg-desktop-dark.jpg);
-        background-color: $VeryDarkBlue;
+    &__task {
+        color: white;
+        font-size: 1.5rem;
+
+        &--done {
+            text-decoration: line-through;
+        }
     }
 }
 
-.light {
-    &__main {
-        background-image: url(../../../public/images/todoApp/images/bg-desktop-light.jpg);
-        background-color: $VeryLightGrayishBlue;
-    }
+input:focus {
+    outline: none !important;
 }
+
+@import './formInput';
+@import './light';
+@import './dark';

@@ -7,8 +7,8 @@ const Header = ({ theme, setTheme }) => {
       <img
         src={
           theme === "dark"
-            ? `/images/todoApp/icons/moon.svg`
-            : `/images/todoApp/icons/sun.svg`
+            ? `/images/todoApp/icons/sun.svg`
+            : `/images/todoApp/icons/moon.svg`
         }
         alt="change icon icon"
         onClick={() => {

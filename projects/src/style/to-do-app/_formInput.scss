@@ -1,0 +1,67 @@
+.formAddTask {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1.5% 1%;
+    margin-bottom: 5%;
+
+    &__label--forInput {
+        display: block;
+        position: relative;
+        cursor: pointer;
+        user-select: none;
+        width: 25px;
+        height: 25px;
+        border-radius: 100%;
+        border: 1px solid $VeryDarkGrayishBlueDark;
+
+        &:hover {
+            border: 1px solid $DarkGrayishBlueDark;
+        }
+
+        input:checked~.formAddTask__span--ofInput {
+            background-color: #2196F3;
+        }
+
+        input:checked~.formAddTask__span--ofInput::after {
+            display: block;
+        }
+
+        .formAddTask__span--ofInput::after {
+            background-image: url(../../../public/images/todoApp/icons/check.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 100%;
+            height: 100%;
+            background-size: 18px;
+        }
+    }
+
+    &__span--ofInput {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        border-radius: 100%;
+
+        &::after {
+            content: "";
+            display: none;
+        }
+    }
+
+    input[type="checkbox"] {
+        display: none;
+    }
+
+    input[name="task"] {
+        width: 80%;
+        padding: 1%;
+        font-size: 1rem;
+        background-color: rgba(255, 255, 255, 0);
+        border: none;
+        font-weight: 700;
+        color: white;
+    }
+}

@@ -1,0 +1,10 @@
+.light {
+    &__main {
+        background-image: url(../../../public/images/todoApp/images/bg-desktop-light.jpg);
+        background-color: $VeryLightGrayishBlue;
+    }
+
+    &__formAddTask {
+        background-color: $VeryLightGray;
+    }
+}
