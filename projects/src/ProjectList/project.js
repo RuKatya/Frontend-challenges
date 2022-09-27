@@ -12,6 +12,16 @@ exports.projcts = [
             "https://www.frontendmentor.io/challenges/rock-paper-scissors-game-pTgwgvgH",
     },
     {
+        name: "Todo app",
+        desc: "The challenge is to build out this todo app.",
+        used: "React, Redux, MongoDB, SCSS",
+        link: "/to-do-app",
+        url: "",
+        github: "",
+        img: "",
+        challenge: "https://www.frontendmentor.io/challenges/todo-app-Su1_KokOW"
+    },
+    {
         name: "Advice Generator App",
         desc: "The challenge is to build out this advice generator app using the Advice Slip API .In this project, I practiced requesting data from the API and displaying it on the page.",
         used: ["React", "SCSS", "API"],
