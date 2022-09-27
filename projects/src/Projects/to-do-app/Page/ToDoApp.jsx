@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { selectTodo } from "../../../redux/todoApp/todoSlice";
 import {
   deleteAllDoneTasks,
+  deleteOneTask,
   getAllTasksAsync,
   toggleDoneTask,
 } from "../../../redux/todoApp/todoThunk";
@@ -10,6 +11,7 @@ import AddTaskInput from "../Components/AddTaskInput";
 import Header from "../Components/Header";
 import "../../../style/to-do-app/index.scss";
 import { getTheme } from "../getTheme";
+import axios from "axios";
 
 const ToDoApp = () => {
   const dispatch = useDispatch();
@@ -44,16 +46,18 @@ const ToDoApp = () => {
   };
 
   const handleDeleteAllDone = async (e) => {
-    console.log(elRefs);
     const allDoneTasks = elRefs.filter(
       (i) => i.current.defaultChecked === true
     );
+
     const deleteTaskIds = allDoneTasks.map((i) => i.current.id);
-    console.log(allDoneTasks);
-    console.log(deleteTaskIds);
+
     dispatch(deleteAllDoneTasks({ deleteTaskIds }));
   };
 
+  const handleDeleteTask = async (id) => {
+    dispatch(deleteOneTask({ id }));
+  };
   return (
     <div
       className={`to-do-app main-page-of-project ${
@@ -76,7 +80,6 @@ const ToDoApp = () => {
                   defaultChecked={i.done}
                   onClick={handleToggleDone}
                   id={i._id}
-                  //   ref={addToRefs}
                   ref={elRefs[index]}
                 />
                 <span></span>
@@ -90,11 +93,16 @@ const ToDoApp = () => {
               >
                 {i.task}
               </div>
+              <img
+                src="/images/todoApp/icons/cross.svg"
+                alt=""
+                onClick={() => handleDeleteTask(i._id)}
+              />
             </div>
           ))}
         </div>
+        <div onClick={handleDeleteAllDone}>Delete all done bla</div>
       </div>
-      <div onClick={handleDeleteAllDone}>Delete all done bla</div>
     </div>
   );
 };

@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { addNewTaskAsync, deleteAllDoneTasks, getAllTasksAsync, toggleDoneTask } from './todoThunk';
+import { addNewTaskAsync, deleteAllDoneTasks, deleteOneTask, getAllTasksAsync, toggleDoneTask } from './todoThunk';
 
 const initialState = {
     value: [],
@@ -38,6 +38,13 @@ export const todoSlice = createSlice({
                 state.status = 'loading';
             })
             .addCase(deleteAllDoneTasks.fulfilled, (state, action) => {
+                state.status = 'idle';
+                state.value = action.payload;
+            })
+            .addCase(deleteOneTask.pending, (state) => {
+                state.status = 'loading';
+            })
+            .addCase(deleteOneTask.fulfilled, (state, action) => {
                 state.status = 'idle';
                 state.value = action.payload;
             })

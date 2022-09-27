@@ -33,6 +33,15 @@ export const toggleDoneTask = createAsyncThunk(
     }
 )
 
+export const deleteOneTask = createAsyncThunk(
+    'todo/deleteOneTask',
+    async ({ id }) => {
+        const { data } = await axios.delete("/todo/delete-task", { data: { id } });
+
+        return data
+    }
+)
+
 export const deleteAllDoneTasks = createAsyncThunk(
     'todo/deleteAllDoneTasks',
     async ({ deleteTaskIds }) => {
