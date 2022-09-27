@@ -46,7 +46,6 @@ exports.changeIfDone = async (req, res) => {
 exports.deleteOneTask = async (req, res) => {
     try {
         const { id } = req.body
-        console.log(id)
         await Todo.findByIdAndDelete(id)
 
         const tasks = await Todo.find({})

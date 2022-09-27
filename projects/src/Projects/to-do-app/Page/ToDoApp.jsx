@@ -1,5 +1,7 @@
 import { createRef, useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
+import AddTaskInput from "../Components/AddTaskInput";
+import Header from "../Components/Header";
 import { selectTodo } from "../../../redux/todoApp/todoSlice";
 import {
   deleteAllDoneTasks,
@@ -7,11 +9,9 @@ import {
   getAllTasksAsync,
   toggleDoneTask,
 } from "../../../redux/todoApp/todoThunk";
-import AddTaskInput from "../Components/AddTaskInput";
-import Header from "../Components/Header";
 import "../../../style/to-do-app/index.scss";
 import { getTheme } from "../getTheme";
-import axios from "axios";
+import Footer from "../Components/Footer";
 
 const ToDoApp = () => {
   const dispatch = useDispatch();
@@ -64,17 +64,52 @@ const ToDoApp = () => {
         theme === "dark" ? "dark__main" : "light__main"
       }`}
     >
-      <div
-        className={`to-do-list ${
-          theme === "dark" ? "to-do-list__dark" : "to-do-list__light"
-        }`}
-      >
+      <div className="to-do-card">
         <Header theme={theme} setTheme={setTheme} />
         <AddTaskInput theme={theme} />
-        <div>
+
+        <div
+          className={`list-of-tasks-to-do ${
+            theme === "dark"
+              ? "dark__list-of-tasks-to-do"
+              : "light__list-of-tasks-to-do"
+          }`}
+        >
+          {todo.map((task, index) => (
+            <div className="list-of-tasks-to-do__eachTask">
+              <label className="formAddTask__label--forInput">
+                <input
+                  type="checkbox"
+                  defaultChecked={task.done}
+                  onClick={handleToggleDone}
+                  id={task._id}
+                  ref={elRefs[index]}
+                />
+                <span className="formAddTask__span--ofInput"></span>
+              </label>
+              <p className={task.done ? "list-of-tasks-to-do__done" : null}>
+                {task.task}
+              </p>
+              <img
+                src="/images/todoApp/icons/cross.svg"
+                alt="delete icon"
+                onClick={() => handleDeleteTask(task._id)}
+              />
+            </div>
+          ))}
+        </div>
+        <Footer handleDeleteAllDone={handleDeleteAllDone} />
+
+        {/* <div
+          className={`list-of-tasks-to-do ${
+            theme === "dark"
+              ? "dark__list-of-tasks-to-do"
+              : "light__list-of-tasks-to-do"
+          }`}
+        >
           {todo.map((i, index) => (
-            <div key={i._id}>
-              <label>
+            <div key={i._id} className="list-of-tasks-to-do__eachTask">
+              <label className="formAddTask__label--forInput">
                 <input
                   type="checkbox"
                   defaultChecked={i.done}
@@ -82,26 +117,27 @@ const ToDoApp = () => {
                   id={i._id}
                   ref={elRefs[index]}
                 />
-                <span></span>
+                <span className="formAddTask__span--ofInput"></span>
               </label>
+
               <div
-                className={`to-do-list__task ${
+                className={`list-of-tasks-to-do ${
                   i.done
-                    ? "to-do-list__task--done"
-                    : "to-do-list__task--needTodo"
+                    ? "list-of-tasks-to-do__done"
+                    : "list-of-tasks-to-do__needTodo"
                 }`}
               >
                 {i.task}
               </div>
               <img
                 src="/images/todoApp/icons/cross.svg"
-                alt=""
+                alt="delete icon"
                 onClick={() => handleDeleteTask(i._id)}
               />
             </div>
           ))}
         </div>
-        <div onClick={handleDeleteAllDone}>Delete all done bla</div>
+        <div onClick={handleDeleteAllDone}>Delete all done bla</div> */}
       </div>
     </div>
   );

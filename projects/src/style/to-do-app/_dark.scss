@@ -4,10 +4,14 @@
         background-color: $VeryDarkBlue;
     }
 
-    &__formAddTask {
+    &__formAddTask,
+    &__list-of-tasks-to-do {
         background: $VeryDarkDesaturatedBlue;
-
     }
 
-    // &__inputAddTask {}
+    &__list-of-tasks-to-do {
+        color: $LightGrayishBlue;
+    }
+
+
 }

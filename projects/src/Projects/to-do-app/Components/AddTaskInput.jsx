@@ -26,10 +26,11 @@ const AddTaskInput = ({ theme }) => {
         theme === "dark" ? "dark__formAddTask" : "light__formAddTask"
       }`}
     >
-      <label htmlFor="checkboxOfTask" className="formAddTask__label--forInput">
+      <label className="formAddTask__label--forInput">
         <input type="checkbox" id="checkboxOfTask" name="ifDone" />
         <span className="formAddTask__span--ofInput"></span>
       </label>
+
       <input type="text" name="task" placeholder="Create a new todo..." />
       <button type="submit" hidden>
         Send

@@ -1,0 +1,16 @@
+.list-of-tasks-to-do {
+    height: 40vh;
+
+    &__eachTask {
+        display: flex;
+        padding: 0% 5%;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid $VeryDarkGrayishBlue;
+    }
+
+    &__done {
+        text-decoration: line-through;
+        font-weight: 100;
+    }
+}
