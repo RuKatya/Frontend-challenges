@@ -19,6 +19,7 @@ const ToDoApp = () => {
   const todo = useSelector(selectTodo);
   const [elRefs, setElRefs] = useState([]);
   const todosLenght = todo.length;
+  // const [done, setDone] = useState('')
 
   useEffect(() => {
     setElRefs((elRefs) =>
@@ -80,6 +81,7 @@ const ToDoApp = () => {
               <label className="formAddTask__label--forInput">
                 <input
                   type="checkbox"
+                  checked={task.done}
                   // defaultChecked={task.done}
                   onClick={handleToggleDone}
                   id={task._id}
