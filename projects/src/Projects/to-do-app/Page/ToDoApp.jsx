@@ -20,7 +20,6 @@ const ToDoApp = () => {
   const [elRefs, setElRefs] = useState([]);
   const todosLenght = todo.length;
   const [filter, setFilter] = useState("ALL");
-  // const [done, setDone] = useState('')
 
   useEffect(() => {
     setElRefs((elRefs) =>
@@ -48,13 +47,6 @@ const ToDoApp = () => {
   };
 
   const handleDeleteAllDone = async (e) => {
-    // const allDone = document.querySelectorAll(".doneInput");
-    // .getAttribute("checked");
-    // console.log(allDone);
-    // const aaa = allDone.filter((i) => i.checked === true);
-    // console.log(aaa);
-
-    // console.log(allDone);
     const allDoneTasks = elRefs.filter((i) => i.current.checked === true);
 
     console.log(allDoneTasks);
@@ -112,7 +104,7 @@ const ToDoApp = () => {
               ))}
             </>
           ) : (
-            <div>No task here</div>
+            <div className="noTask">No task here</div>
           )}
         </div>
         <Footer

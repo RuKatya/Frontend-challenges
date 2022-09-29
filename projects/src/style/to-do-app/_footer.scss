@@ -11,12 +11,17 @@
         justify-content: space-between;
         align-items: center;
 
-        & div {
+        &--btn {
             cursor: pointer;
-        }
+            color: hsl(234, 11%, 52%);
 
-        // & div:hover {
-        //     color: $LightGrayishBlue;
-        // }
+            &:hover {
+                color: $LightGrayishBlue;
+            }
+        }
     }
+}
+
+.active {
+    color: hsl(220, 98%, 61%);
 }

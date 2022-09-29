@@ -46,6 +46,14 @@ input:focus {
     outline: none !important;
 }
 
+.noTask {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+}
+
 @import './formInput';
 @import './listOfTasks';
 @import './light';

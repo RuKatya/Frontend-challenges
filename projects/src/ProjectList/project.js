@@ -4,23 +4,21 @@ exports.projcts = [
         desc: "The challenge is to build out this Rock, Paper, Scissors game.",
         used: ["React", "SCSS"],
         link: "/rock-paper-scissors",
-        url: "https://frontend-challanges.herokuapp.com/rock-paper-scissors",
         github:
             "https://github.com/RuKatya/Frontend-challenges/tree/main/projects/src/Projects/rock-paper-scissors",
         img: "rock-paper-scissors",
         challenge:
             "https://www.frontendmentor.io/challenges/rock-paper-scissors-game-pTgwgvgH",
     },
-    // {
-    //     name: "Todo app",
-    //     desc: "The challenge is to build out this todo app.",
-    //     used: "React, Redux, MongoDB, SCSS",
-    //     link: "/to-do-app",
-    //     url: "",
-    //     github: "",
-    //     img: "",
-    //     challenge: "https://www.frontendmentor.io/challenges/todo-app-Su1_KokOW"
-    // },
+    {
+        name: "Todo app",
+        desc: "The challenge is to build out this todo app.",
+        used: ["React, Redux, MongoDB, SCSS"],
+        link: "/to-do-app",
+        github: "https://github.com/RuKatya/Frontend-challenges/tree/main/projects/src/Projects/to-do-app",
+        img: "",
+        challenge: "https://www.frontendmentor.io/challenges/todo-app-Su1_KokOW"
+    },
     {
         name: "Advice Generator App",
         desc: "The challenge is to build out this advice generator app using the Advice Slip API .In this project, I practiced requesting data from the API and displaying it on the page.",

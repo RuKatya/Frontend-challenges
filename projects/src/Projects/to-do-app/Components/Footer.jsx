@@ -6,7 +6,9 @@ import { selectTodo } from "../../../redux/todoApp/todoSlice";
 const Footer = ({ handleDeleteAllDone, filter, setFilter, theme }) => {
   const todo = useSelector(selectTodo);
   const [total, setTotal] = useState();
-  // const [filter, setFilter] = useState("ALL");
+
+  // const [colorDiv,setColorDiv] = useState("hsl(234, 11%, 52%)")
+  // const [colorHover, setColorHover] = useState("hsl(233, 11%, 84%)")
 
   useEffect(() => {
     setTotal(todo.filter((i) => i.done !== true).length);
@@ -23,31 +25,25 @@ const Footer = ({ handleDeleteAllDone, filter, setFilter, theme }) => {
       <div className="footer__filter">
         <div
           onClick={() => setFilter("ALL")}
-          style={{
-            color:
-              filter === "ALL" ? "hsl(220, 98%, 61%)" : "hsl(234, 11%, 52%)",
-          }}
-          // onMouseEnter={}
+          className={`footer__filter--btn ${
+            filter === "ALL" ? "active" : null
+          }`}
         >
           All
         </div>
         <div
           onClick={() => setFilter("ACTIVE")}
-          style={{
-            color:
-              filter === "ACTIVE" ? "hsl(220, 98%, 61%)" : "hsl(234, 11%, 52%)",
-          }}
+          className={`footer__filter--btn ${
+            filter === "ACTIVE" ? "active" : null
+          }`}
         >
           Active
         </div>
         <div
           onClick={() => setFilter("COMPLETED")}
-          style={{
-            color:
-              filter === "COMPLETED"
-                ? "hsl(220, 98%, 61%)"
-                : "hsl(234, 11%, 52%)",
-          }}
+          className={`footer__filter--btn ${
+            filter === "COMPLETED" ? "active" : null
+          }`}
         >
           Completed
         </div>
