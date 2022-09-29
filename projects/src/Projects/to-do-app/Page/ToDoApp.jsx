@@ -76,7 +76,7 @@ const ToDoApp = () => {
           }`}
         >
           {todo.map((task, index) => (
-            <div className="list-of-tasks-to-do__eachTask">
+            <div className="list-of-tasks-to-do__eachTask" key={task._id}>
               <label className="formAddTask__label--forInput">
                 <input
                   type="checkbox"
