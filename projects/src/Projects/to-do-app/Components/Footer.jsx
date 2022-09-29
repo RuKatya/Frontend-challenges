@@ -1,9 +1,58 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useState } from "react";
+import { useSelector } from "react-redux";
+import { selectTodo } from "../../../redux/todoApp/todoSlice";
 
-const Footer = ({ handleDeleteAllDone }) => {
+const Footer = ({ handleDeleteAllDone, filter, setFilter, theme }) => {
+  const todo = useSelector(selectTodo);
+  const [total, setTotal] = useState();
+  // const [filter, setFilter] = useState("ALL");
+
+  useEffect(() => {
+    setTotal(todo.filter((i) => i.done !== true).length);
+    console.log(todo);
+  }, [todo]);
+
   return (
-    <div>
-      <div onClick={handleDeleteAllDone}>Delete all done bla</div>
+    <div
+      className={`footer ${
+        theme === "dark" ? "dark__footer" : "light__footer"
+      }`}
+    >
+      <div>{total} items left</div>
+      <div className="footer__filter">
+        <div
+          onClick={() => setFilter("ALL")}
+          style={{
+            color:
+              filter === "ALL" ? "hsl(220, 98%, 61%)" : "hsl(234, 11%, 52%)",
+          }}
+          // onMouseEnter={}
+        >
+          All
+        </div>
+        <div
+          onClick={() => setFilter("ACTIVE")}
+          style={{
+            color:
+              filter === "ACTIVE" ? "hsl(220, 98%, 61%)" : "hsl(234, 11%, 52%)",
+          }}
+        >
+          Active
+        </div>
+        <div
+          onClick={() => setFilter("COMPLETED")}
+          style={{
+            color:
+              filter === "COMPLETED"
+                ? "hsl(220, 98%, 61%)"
+                : "hsl(234, 11%, 52%)",
+          }}
+        >
+          Completed
+        </div>
+      </div>
+      <div onClick={handleDeleteAllDone}>Cleare completed</div>
     </div>
   );
 };

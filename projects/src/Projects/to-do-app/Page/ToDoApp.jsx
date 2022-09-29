@@ -19,6 +19,7 @@ const ToDoApp = () => {
   const todo = useSelector(selectTodo);
   const [elRefs, setElRefs] = useState([]);
   const todosLenght = todo.length;
+  const [filter, setFilter] = useState("ALL");
   // const [done, setDone] = useState('')
 
   useEffect(() => {
@@ -35,9 +36,9 @@ const ToDoApp = () => {
 
   useEffect(() => {
     (async () => {
-      dispatch(getAllTasksAsync());
+      dispatch(getAllTasksAsync({ filter }));
     })();
-  }, []);
+  }, [filter]);
 
   const handleToggleDone = async (e) => {
     const done = e.target.checked;
@@ -47,9 +48,16 @@ const ToDoApp = () => {
   };
 
   const handleDeleteAllDone = async (e) => {
-    const allDoneTasks = elRefs.filter(
-      (i) => i.current.defaultChecked === true
-    );
+    // const allDone = document.querySelectorAll(".doneInput");
+    // .getAttribute("checked");
+    // console.log(allDone);
+    // const aaa = allDone.filter((i) => i.checked === true);
+    // console.log(aaa);
+
+    // console.log(allDone);
+    const allDoneTasks = elRefs.filter((i) => i.current.checked === true);
+
+    console.log(allDoneTasks);
 
     const deleteTaskIds = allDoneTasks.map((i) => i.current.id);
 
@@ -59,6 +67,7 @@ const ToDoApp = () => {
   const handleDeleteTask = async (id) => {
     dispatch(deleteOneTask({ id }));
   };
+
   return (
     <div
       className={`to-do-app main-page-of-project ${
@@ -76,70 +85,42 @@ const ToDoApp = () => {
               : "light__list-of-tasks-to-do"
           }`}
         >
-          {todo.map((task, index) => (
-            <div className="list-of-tasks-to-do__eachTask" key={task._id}>
-              <label className="formAddTask__label--forInput">
-                <input
-                  type="checkbox"
-                  checked={task.done}
-                  // defaultChecked={task.done}
-                  onClick={handleToggleDone}
-                  id={task._id}
-                  ref={elRefs[index]}
-                />
-                <span className="formAddTask__span--ofInput"></span>
-              </label>
-              <p className={task.done ? "list-of-tasks-to-do__done" : null}>
-                {task.task}
-              </p>
-              <img
-                src="/images/todoApp/icons/cross.svg"
-                alt="delete icon"
-                onClick={() => handleDeleteTask(task._id)}
-              />
-            </div>
-          ))}
+          {todo.length > 0 ? (
+            <>
+              {todo.map((task, index) => (
+                <div className="list-of-tasks-to-do__eachTask" key={task._id}>
+                  <label className="formAddTask__label--forInput">
+                    <input
+                      type="checkbox"
+                      className="doneInput"
+                      checked={task.done}
+                      onChange={handleToggleDone}
+                      id={task._id}
+                      ref={elRefs[index]}
+                    />
+                    <span className="formAddTask__span--ofInput"></span>
+                  </label>
+                  <p className={task.done ? "list-of-tasks-to-do__done" : null}>
+                    {task.task}
+                  </p>
+                  <img
+                    src="/images/todoApp/icons/cross.svg"
+                    alt="delete icon"
+                    onClick={() => handleDeleteTask(task._id)}
+                  />
+                </div>
+              ))}
+            </>
+          ) : (
+            <div>No task here</div>
+          )}
         </div>
-        <Footer handleDeleteAllDone={handleDeleteAllDone} />
-
-        {/* <div
-          className={`list-of-tasks-to-do ${
-            theme === "dark"
-              ? "dark__list-of-tasks-to-do"
-              : "light__list-of-tasks-to-do"
-          }`}
-        >
-          {todo.map((i, index) => (
-            <div key={i._id} className="list-of-tasks-to-do__eachTask">
-              <label className="formAddTask__label--forInput">
-                <input
-                  type="checkbox"
-                  defaultChecked={i.done}
-                  onClick={handleToggleDone}
-                  id={i._id}
-                  ref={elRefs[index]}
-                />
-                <span className="formAddTask__span--ofInput"></span>
-              </label>
-
-              <div
-                className={`list-of-tasks-to-do ${
-                  i.done
-                    ? "list-of-tasks-to-do__done"
-                    : "list-of-tasks-to-do__needTodo"
-                }`}
-              >
-                {i.task}
-              </div>
-              <img
-                src="/images/todoApp/icons/cross.svg"
-                alt="delete icon"
-                onClick={() => handleDeleteTask(i._id)}
-              />
-            </div>
-          ))}
-        </div>
-        <div onClick={handleDeleteAllDone}>Delete all done bla</div> */}
+        <Footer
+          handleDeleteAllDone={handleDeleteAllDone}
+          filter={filter}
+          setFilter={setFilter}
+          theme={theme}
+        />
       </div>
     </div>
   );

@@ -1,0 +1,22 @@
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: clamp(12px, 0.8rem, 20px);
+    padding: 2% 1%;
+
+    &__filter {
+        width: 40%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        & div {
+            cursor: pointer;
+        }
+
+        // & div:hover {
+        //     color: $LightGrayishBlue;
+        // }
+    }
+}

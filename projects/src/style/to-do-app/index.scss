@@ -4,7 +4,7 @@ $fontFamily: 'Josefin Sans',
 sans-serif;
 
 // //Primary
-// $BrightBlue: hsl(220, 98%, 61%);
+$BrightBlue: hsl(220, 98%, 61%);
 // $CheckBackground: linear-gradient hsl(192, 100%, 67%) to hsl(280, 87%, 65%);
 
 //Neutral
@@ -32,7 +32,6 @@ $VeryDarkGrayishBlueDarkMore: hsl(237, 14%, 26%);
 }
 
 .to-do-card {
-    // background-color: aquamarine;
     width: clamp(300px, 30%, 1200px);
 
     &__header {
@@ -51,3 +50,4 @@ input:focus {
 @import './listOfTasks';
 @import './light';
 @import './dark';
+@import './footer';

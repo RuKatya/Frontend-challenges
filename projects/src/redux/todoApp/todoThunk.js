@@ -3,8 +3,8 @@ import axios from "axios";
 
 export const getAllTasksAsync = createAsyncThunk(
     'todo/getAllTasks',
-    async () => {
-        const { data } = await axios.get("/todo/get-task");
+    async ({ filter }) => {
+        const { data } = await axios.post("/todo/get-task", { filter });
 
         return data;
     }
@@ -27,9 +27,6 @@ export const toggleDoneTask = createAsyncThunk(
 
         const { tasks } = data
         return tasks
-
-        // const { taskId, taskDone } = data
-        // return { taskId, taskDone };
     }
 )
 

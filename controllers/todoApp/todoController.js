@@ -2,9 +2,27 @@ const { Todo } = require("../../models/todoApp/todoModel")
 
 exports.getAllTasks = async (req, res) => {
     try {
+        const { filter } = req.body
+
         const tasks = await Todo.find({})
-        console.log(tasks)
-        res.send(tasks)
+
+        switch (filter) {
+            case "ALL":
+                res.send(tasks)
+                break;
+            case "ACTIVE":
+                const active = tasks.filter(i => i.done === false)
+                res.send(active)
+                break;
+            case "COMPLETED":
+                const completed = tasks.filter(i => i.done === true)
+                res.send(completed)
+                break;
+
+            default:
+                res.send(tasks)
+                break;
+        }
     } catch (error) {
         console.log(error)
         res.send(error)
@@ -14,11 +32,9 @@ exports.getAllTasks = async (req, res) => {
 exports.addNewTask = async (req, res) => {
     try {
         const { task, done } = req.body
-        console.log(task)
         const newTask = new Todo({
             task, done
         })
-        console.log(newTask)
 
         await newTask.save()
         res.send({ newTask, ok: true })
