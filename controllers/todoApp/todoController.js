@@ -3,6 +3,7 @@ const { Todo } = require("../../models/todoApp/todoModel")
 exports.getAllTasks = async (req, res) => {
     try {
         const tasks = await Todo.find({})
+        console.log(tasks)
         res.send(tasks)
     } catch (error) {
         console.log(error)
@@ -13,10 +14,11 @@ exports.getAllTasks = async (req, res) => {
 exports.addNewTask = async (req, res) => {
     try {
         const { task, done } = req.body
-
+        console.log(task)
         const newTask = new Todo({
             task, done
         })
+        console.log(newTask)
 
         await newTask.save()
         res.send({ newTask, ok: true })
