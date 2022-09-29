@@ -78,13 +78,13 @@ const ToDoApp = () => {
           {todo.map((task, index) => (
             <div className="list-of-tasks-to-do__eachTask" key={task._id}>
               <label className="formAddTask__label--forInput">
-                <input
+                {/* <input
                   type="checkbox"
-                  defaultChecked={task.done}
+                  // defaultChecked={task.done}
                   onClick={handleToggleDone}
                   id={task._id}
                   ref={elRefs[index]}
-                />
+                /> */}
                 <span className="formAddTask__span--ofInput"></span>
               </label>
               <p className={task.done ? "list-of-tasks-to-do__done" : null}>
