@@ -31,7 +31,7 @@ const RoutesPage = () => {
           <Route path="expenses-chart" element={<ExpensesIndex />} />
           <Route path="intective-rating" element={<IntectivcePage />} />
           <Route path="rock-paper-scissors" element={<RPSIndex />} />
-          <Route path="to-do-app" element={<ToDoApp />} />
+          {/* <Route path="to-do-app" element={<ToDoApp />} /> */}
           {/* <Route path="timer" element={<TimerIndex />} /> */}
         </Route>
       </Routes>
